@@ -12,4 +12,5 @@ document.getElementById('ingresar').addEventListener('click', function () {
     if(!usuario || !password){
     showAlertError();
     }
+    window.location.href = "index.html";
 });
