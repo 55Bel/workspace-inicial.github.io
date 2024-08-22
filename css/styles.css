@@ -188,3 +188,78 @@ a.custom-card:hover {
 .checked {
   color: orange;
 }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 18rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Permite que el footer se mantenga en la parte inferior */
+}
+
+
+.card-body {
+  padding: 20px;
+  padding-bottom: 40px; /* Aumenta el padding inferior para crear más espacio para el footer */
+  flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+
+.card-footer {
+  padding: 10px 20px;
+  background-color: #f8f9fa; /* Color de fondo para el footer */
+  text-align: left;
+  border-top: none; /* Eliminar la línea de separación */
+}
+
+
+.card-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.card-price {
+  font-size: 1.2em;
+  color: #050505;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.card-sold-count {
+  font-size: 0.8em; /* Tamaño de fuente más pequeño */
+  color: #6c757d; /* Color gris */
+  margin-top: 0; /* Quita el margen superior para que esté pegado al borde del footer */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
