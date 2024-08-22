@@ -11,6 +11,7 @@ document.getElementById('ingresar').addEventListener('click', function () {
     let password = document.getElementById("password").value.trim();
     if(!usuario || !password){
     showAlertError();
+    return;
     }
     window.location.href = "index.html";
 });
