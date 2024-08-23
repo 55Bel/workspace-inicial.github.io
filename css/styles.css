@@ -255,11 +255,11 @@ a.custom-card:hover {
   padding: 10px 20px;
   font-size: 1em;
   color: #fff;
-  background-color: #007bff;
+  background-color: orange;
   border-radius: 5px;
   text-decoration: none;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: orange;
 }

@@ -13,5 +13,8 @@ document.getElementById('ingresar').addEventListener('click', function () {
     showAlertError();
     return;
     }
+    localStorage.setItem('isAuthenticated',"true");
     window.location.href = "index.html";
 });
+
+  

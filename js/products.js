@@ -20,3 +20,4 @@ fetch('https://japceibal.github.io/emercado-api/cats_products/101.json')
         `).join('');
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
+    
