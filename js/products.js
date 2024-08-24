@@ -2,7 +2,6 @@
 fetch('https://japceibal.github.io/emercado-api/cats_products/101.json')
     .then(response => response.json()) // Convierte la respuesta en JSON
     .then(data => {
-        // Manipular los datos JSON
         const contenido = document.getElementById('contenido');
         contenido.innerHTML = data.products.map(product => `
         <div class="card">

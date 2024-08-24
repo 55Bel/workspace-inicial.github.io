@@ -203,22 +203,22 @@ a.custom-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* Permite que el footer se mantenga en la parte inferior */
+  flex-direction: column;
 }
 
 
 .card-body {
   padding: 20px;
-  padding-bottom: 40px; /* Aumenta el padding inferior para crear más espacio para el footer */
-  flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+  padding-bottom: 40px; 
+  flex: 1; 
 }
 
 
 .card-footer {
   padding: 10px 20px;
-  background-color: #f8f9fa; /* Color de fondo para el footer */
+  background-color: #f8f9fa; 
   text-align: left;
-  border-top: none; /* Eliminar la línea de separación */
+  border-top: none; /*Eliminar la línea de separación*/
 }
 
 
@@ -241,7 +241,7 @@ a.custom-card:hover {
 
 .card-sold-count {
   font-size: 0.8em; /* Tamaño de fuente más pequeño */
-  color: #6c757d; /* Color gris */
+  color: #6c757d; 
   margin-top: 0; /* Quita el margen superior para que esté pegado al borde del footer */
 }
 

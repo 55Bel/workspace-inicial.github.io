@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
+    //Desafiate
     const isAuthenticated = localStorage.getItem('isAuthenticated');
     if (isAuthenticated !== 'true') {
       window.location.href = 'login.html';
       return;
+    //---------------------------------------------------------------------------
     } else{
         document.getElementById("autos").addEventListener("click", function() {
         localStorage.setItem("catID", 101);

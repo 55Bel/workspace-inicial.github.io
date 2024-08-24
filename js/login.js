@@ -1,7 +1,5 @@
 
-/*control de datos vacios*/
-
-
+/* Control de datos vacíos */
 function showAlertError() {
     document.getElementById("alert-danger").classList.add("show");
 }
@@ -13,7 +11,8 @@ document.getElementById('ingresar').addEventListener('click', function () {
     showAlertError();
     return;
     }
-    localStorage.setItem('isAuthenticated',"true");
+
+    localStorage.setItem('isAuthenticated',"true"); /* Desafiate */
     window.location.href = "index.html";
 });
 
