@@ -230,6 +230,7 @@ a.custom-card:hover {
 .card-text {
   font-size: 1em;
   margin-bottom: 15px;
+  color: #6c757d;
 }
 
 .card-price {
