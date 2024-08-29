@@ -22,6 +22,24 @@ nav a {
   user-select: none;
 }
 
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+  p {
+    font-size: 14px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    word-break: break-word; /* Rompe las palabras largas para evitar que se salgan del contenedor */
+    white-space: normal; /* Permite que el texto se ajuste automáticamente */
+  }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  p {
+    font-size: 16px; /* Ajusta el tamaño de fuente para tabletas */
+    word-break: normal; /* Ajusta cómo se manejan las palabras */
+    white-space: normal; /* Permite que el texto se ajuste automáticamente */
+  }
+}
+
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
