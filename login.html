@@ -22,8 +22,8 @@
   </style>
 </head>
 
-<body>
-  <main class="d-flex justify-content-center vh-100">
+<body class="d-flex flex-column min-vh-100">
+  <main class="flex-fill d-flex justify-content-center align-items-center">
     <div class="container">
       <!-- Imagen -->
       <div class="row justify-content-center">
@@ -66,12 +66,19 @@
 
 
   <footer class="text-muted">
-    <div class="container">
-      <p class="float-end">
-        <a href="#">Volver arriba</a>
-      </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>
-      </p>
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Este sitio forma parte de 
+            <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>
+          </p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p>
+            <a href="#">Volver arriba</a>
+          </p>
+        </div>
+      </div>
     </div>
   </footer>
   <script src="js/login.js"></script>
