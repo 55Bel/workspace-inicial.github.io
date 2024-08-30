@@ -300,4 +300,26 @@ a.custom-card:hover {
   margin: 0; /* Eliminar márgenes por defecto del h1 */
 }
 
+/* Adaptar el banner para pantallas móviles */
+@media (max-width: 320px) {
+  .banner {
+    padding: 10px 0; /* Reducir el espacio vertical alrededor del texto */
+    margin-bottom: 10px; /* Reducir el espacio debajo del banner */
+  }
 
+  .banner h1 {
+    font-size: 36px; /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+}
+
+/* Adaptar el banner para tablet */
+@media (max-width: 768px) {
+  .banner {
+    padding: 10px 0; /* Reducir el espacio vertical alrededor del texto */
+    margin-bottom: 10px; /* Reducir el espacio debajo del banner */
+  }
+
+  .banner h1 {
+    font-size: 36px; /* Reducir el tamaño del texto en pantallas pequeñas */
+  }
+}
