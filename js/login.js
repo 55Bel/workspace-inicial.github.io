@@ -11,7 +11,7 @@ document.getElementById('ingresar').addEventListener('click', function () {
     showAlertError();
     return;
     }
-
+    localStorage.setItem('usuario', usuario);
     localStorage.setItem('isAuthenticated',"true"); /* Desafiate */
     window.location.href = "index.html";
 });
