@@ -1,5 +1,7 @@
 // Cargar el archivo JSON desde la URL
-fetch('https://japceibal.github.io/emercado-api/cats_products/101.json')
+let catID = localStorage.getItem("catID"); // Obtener el valor de catID del localStorage
+
+fetch(`https://japceibal.github.io/emercado-api/cats_products/${catID}.json`) 
     .then(response => response.json()) // Convierte la respuesta en JSON
     .then(data => {
         const contenido = document.getElementById('contenido');
@@ -17,6 +19,9 @@ fetch('https://japceibal.github.io/emercado-api/cats_products/101.json')
         </div>
 
         `).join('');
+        const catName = data.catName;  
+        const categoriaTitulo = document.getElementById('categoriaTitulo');
+        categoriaTitulo.textContent = `¡Bienvenido a la sección de ${catName}!`;
     })
     .catch(error => console.error('Error al cargar el archivo JSON:', error));
    
