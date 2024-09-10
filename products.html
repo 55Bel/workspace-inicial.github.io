@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
+<html lang="es"></html>
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -43,9 +42,40 @@
     <div class="banner">
       <h1>¡Bienvenido a la sección de Autos!</h1>
   </div>
+  <div class="products-container">
+    
+
+    <div class="filter-controls">
+      
+      <div class="price-filter">
+        <label for="minPrice">Precio Mínimo:</label>
+        <input type="number" id="minPrice" placeholder="0">
+  
+        <label for="maxPrice">Precio Máximo:</label>
+        <input type="number" id="maxPrice" placeholder="10000">
+  
+        <button id="filterBtn">Filtrar</button>
+        <button id="limpiarBtn">Limpiar</button>
+      </div>
+  
+      <div class="sort-controls">
+        <h6>Ordenar por:</h6>
+        <select id="sortOptions">
+          <option value="ascPrice">Precio: Menor a Mayor</option>
+          <option value="descPrice">Precio: Mayor a Menor</option>
+          <option value="descRelevance">Relevancia: Más Vendidos</option>
+        </select>
+        <input type="search" id="productSearch" placeholder="Buscar productos..." />
+        <button id="searchBtn">Buscar</button>
+      </div>
+    </div>
+  
+    <div class="product-list">
+      <!-- Aquí se mostrarán los productos -->
+    </div>
+  </div>
     <div id="contenido" class="card-container"></div>
   </main>
-
   <footer class="text-muted">
     <div class="container text-center text-md-start">
       <div class="row">
