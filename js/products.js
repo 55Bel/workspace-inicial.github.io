@@ -58,6 +58,19 @@ fetch(`https://japceibal.github.io/emercado-api/cats_products/${catID}.json`)
             mostrarProductos(productosFiltrados); // Mostrar los productos filtrados y ordenados
         }
 
+        //DESAFIATE Función para buscar
+        function buscar() {
+            const searchText = document.getElementById('productSearch').value.toLowerCase(); //con toLowerCase paso todo a minuscula
+            // Filtrar los productos según el texto ingresado
+            productosFiltrados = productosFiltrados.filter(product => {
+                return product.name.toLowerCase().includes(searchText) ||
+                product.description.toLowerCase().includes(searchText);
+            });
+            ordenar(); // Aplicar el orden después de la búsqueda
+        }
+
+
+
         // Event listener para el botón de filtrar
         document.getElementById('filterBtn').addEventListener('click', function() {
           filtrarPorPrecio(); // Aplica el filtro y luego el orden
@@ -75,6 +88,12 @@ fetch(`https://japceibal.github.io/emercado-api/cats_products/${catID}.json`)
         document.getElementById('sortOptions').addEventListener('change', function() {
             ordenar(); // Aplica el orden con los productos filtrados
         });
+        
+        // DESAFIATE Event listener para el campo de búsqueda
+        document.getElementById('productSearch').addEventListener('input', function() {
+            buscar(); // Aplica la búsqueda en tiempo real;
+        });
+
 
         //El título cambia según la categoría
         const catName = data.catName;  
