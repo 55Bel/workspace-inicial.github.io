@@ -10,7 +10,7 @@ fetch(`https://japceibal.github.io/emercado-api/cats_products/${catID}.json`)
 
         function mostrarProductos(filtrados) {
             contenido.innerHTML = filtrados.map(product => `
-            <div class="card">
+            <div class="card" onclick="seleccionarProducto(${product.id})">
                 <img src="${product.image}" class="card-img-top" alt="${product.name}">
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
@@ -107,5 +107,11 @@ fetch(`https://japceibal.github.io/emercado-api/cats_products/${catID}.json`)
         document.getElementById('nombre-usuario').textContent = `${usuario}`;
     };
 
+
+    // Función para seleccionar un producto, guardar su id en el localStorage y redirigir
+    function seleccionarProducto(productId) {
+        localStorage.setItem('productID', productId);
+        window.location.href = 'product-info.html'; // Redirige a la página product-info.html
+    }
 
 
