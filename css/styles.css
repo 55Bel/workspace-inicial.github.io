@@ -381,4 +381,158 @@ a.custom-card:hover {
   }
 }
 
+.main-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para centrar el contenido menos la categoría y nombre del producto */
+.content-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+  text-align: center; /* Opcional: centra el texto dentro de los elementos */
+}
+
+.main-image {
+  margin-bottom: 20px; /* Espacio abajo de la imagen principal */
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.thumbnails img:hover {
+  border-color: #333;
+}
+
+#thumbnails {
+  display: flex;
+  overflow-x: auto; /* Permite desplazamiento horizontal si hay muchas miniaturas */
+  white-space: nowrap; /* Mantiene las miniaturas en una sola línea */
+  padding: 10px 0; /* Espacio arriba y abajo del carrusel */
+}
+
+.thumbnail {
+  width: 150px; /* Ajusta el tamaño de las miniaturas según tu diseño */
+  height: auto; /* Mantiene la relación de aspecto */
+  margin-right: 10px; /* Espacio entre las miniaturas */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+.thumbnail:last-child {
+  margin-right: 0; /* Elimina el margen derecho de la última miniatura */
+}
+/* Estilos para centrar el contenido menos la categoría y nombre del producto */
+.content-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+  text-align: center; /* Opcional: centra el texto dentro de los elementos */
+}
+
+.main-image {
+  margin-bottom: 20px; /* Espacio abajo de la imagen principal */
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.thumbnails img:hover {
+  border-color: #333;
+}
+
+#thumbnails {
+  display: flex;
+  overflow-x: auto; /* Permite desplazamiento horizontal si hay muchas miniaturas */
+  white-space: nowrap; /* Mantiene las miniaturas en una sola línea */
+  padding: 10px 0; /* Espacio arriba y abajo del carrusel */
+}
+
+.thumbnail {
+  width: 150px; /* Ajusta el tamaño de las miniaturas según tu diseño */
+  height: auto; /* Mantiene la relación de aspecto */
+  margin-right: 10px; /* Espacio entre las miniaturas */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+.thumbnail:last-child {
+  margin-right: 0; /* Elimina el margen derecho de la última miniatura */
+}
+/* Estilos para centrar el contenido menos la categoría y nombre del producto */
+.content-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+  text-align: center; /* Opcional: centra el texto dentro de los elementos */
+}
+
+.main-image {
+  margin-bottom: 20px; /* Espacio abajo de la imagen principal */
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+.thumbnails img:hover {
+  border-color: #333;
+}
+
+#thumbnails {
+  display: flex;
+  overflow-x: auto; /* Permite desplazamiento horizontal si hay muchas miniaturas */
+  white-space: nowrap; /* Mantiene las miniaturas en una sola línea */
+  padding: 10px 0; /* Espacio arriba y abajo del carrusel */
+}
+
+.thumbnail {
+  width: 150px; /* Ajusta el tamaño de las miniaturas según tu diseño */
+  height: auto; /* Mantiene la relación de aspecto */
+  margin-right: 10px; /* Espacio entre las miniaturas */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+.thumbnail:last-child {
+  margin-right: 0; /* Elimina el margen derecho de la última miniatura */
+}
+
+
 

@@ -30,26 +30,47 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
-          <li class="nav-item">
-          </li>
         </ul>
-        <span class="navbar-text ms-auto" id="nombre-usuario">
-        </span>
+        <span class="navbar-text ms-auto" id="nombre-usuario"></span>
       </div>
     </div>
   </nav>
+
   <main>
-    <div class="container">
-      <h4 id="categoria"></h4>
-      <h1 id="nombre-producto"></h1>
-      <div id="image"></div>
+    <div class="container mt-4">
+      <div class="product-container">
+        <!-- Información del producto -->
+        <div class="product-info">
+          <h4 id="categoria"></h4>
+          <h1 id="nombre-producto"></h1>
+        </div>
+        <!-- Contenedor de contenido centrado -->
+        <div class="content-centered">
+          <!-- Contenedor de la imagen principal -->
+          <div class="main-image">
+            <img id="imagen-principal" src="" alt="Imagen del producto principal" />
+          </div>
+          <!-- Contenedor de miniaturas -->
+          <div class="thumbnails" id="thumbnails"></div>
+          <!-- Descripción -->
+          <div class="product-description">
+            <p id="descripcion"></p>
+            <p id="precio"></p>
+            <p id="vendidos"></p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+  
+
   <footer class="text-muted">
     <div class="container">
       <p class="float-end">
         <a href="#">Volver arriba</a>
       </p>
-      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a>
+      </p>
     </div>
   </footer>
   <div id="spinner-wrapper">
