@@ -30,38 +30,52 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
+          <li class="nav-item">
+          </li>
         </ul>
-        <span class="navbar-text ms-auto" id="nombre-usuario"></span>
+        <span class="navbar-text ms-auto" id="nombre-usuario">
+        </span>
       </div>
     </div>
   </nav>
 
   <main>
     <div class="container mt-4">
-      <div class="product-container">
-        <!-- Información del producto -->
-        <div class="product-info">
-          <h4 id="categoria"></h4>
-          <h1 id="nombre-producto"></h1>
-        </div>
-        <!-- Contenedor de contenido centrado -->
-        <div class="content-centered">
-          <!-- Contenedor de la imagen principal -->
-          <div class="main-image">
-            <img id="imagen-principal" src="" alt="Imagen del producto principal" />
+      <div class="row">
+        <!-- Primera columna: Categoría y Nombre del producto -->
+        <div class="col-md-3">
+          <div class="product-info">
+            <h4 id="categoria" class="gris">></h4>
+            <h1 id="nombre-producto"></h1>
           </div>
-          <!-- Contenedor de miniaturas -->
-          <div class="thumbnails" id="thumbnails"></div>
-          <!-- Descripción -->
-          <div class="product-description">
+        </div>
+  
+        <!-- Segunda columna: Carrusel de imágenes -->
+        <div class="col-md-6 text-center">
+          <div class="main-image mt-5">
+            <!-- Aquí se agrega el margen superior -->
+            <img id="imagen-principal" src="" alt="Imagen del producto principal" class="img-fluid" />
+          </div>
+          <div class="thumbnails mt-3" id="thumbnails">
+            <!-- Aquí puedes agregar miniaturas -->
+          </div>
+        </div>
+  
+        <!-- Tercera columna: Descripción y más información -->
+        <div class="col-md-3">
+          <div class="product-description mt-5">
+            <!-- Clase de Bootstrap para margen superior -->
+            <h6 class="gris">Descripción del producto:</h6>
             <p id="descripcion"></p>
-            <p id="precio"></p>
+            <h2 id="precio"></h2>
             <p id="vendidos"></p>
           </div>
         </div>
       </div>
     </div>
   </main>
+  
+  
   
 
   <footer class="text-muted">

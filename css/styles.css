@@ -534,5 +534,9 @@ a.custom-card:hover {
   margin-right: 0; /* Elimina el margen derecho de la última miniatura */
 }
 
+.gris {
+  color: grey;
+}
+
 
 
