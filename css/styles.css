@@ -45,7 +45,7 @@ input[type="number"] {
 
 #filterBtn {
   padding: 5px 15px;
-  background-color: #3483fa;
+  background-color: #df7925;
   color: white;
   border: none;
   border-radius: 4px;
@@ -54,7 +54,7 @@ input[type="number"] {
 }
 #searchBtn {
   padding: 5px 15px;
-  background-color: #3483fa;
+  background-color:  #df7925;
   color: white;
   border: none;
   border-radius: 4px;
@@ -63,12 +63,20 @@ input[type="number"] {
 }
 #limpiarBtn {
   padding: 5px 15px;
-  background-color: #3483fa;
+  background-color:  #df7925;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   margin-top: 10px;
+}
+#limpiarBtn:hover {
+  background-color: #f78d36;
+  color: black;
+}
+#filterBtn:hover {
+  background-color: #f78d36;
+  color: black;
 }
 
 #sortOptions {
