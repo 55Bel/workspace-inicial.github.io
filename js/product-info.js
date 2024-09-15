@@ -25,10 +25,7 @@ fetch(`https://japceibal.github.io/emercado-api/cats_products/${catID}.json`)
           document.getElementById('descripcion').textContent = productData.description;
           document.getElementById('precio').textContent = `${productData.cost} ${productData.currency}`;
           document.getElementById('vendidos').textContent = `Cantidad de vendidos: ${productData.soldCount}`;
-
-          // Configurar la imagen principal inicial
           document.getElementById('imagen-principal').src = `img/prod${productData.id}_1.jpg`;
-
           // Generar las miniaturas dinámicamente
           let thumbnailsContainer = document.getElementById('thumbnails');
           productData.images.forEach((image, index) => {
